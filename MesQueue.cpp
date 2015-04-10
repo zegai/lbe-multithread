@@ -29,7 +29,7 @@ PQNode MesQueue::OutQueue()
 	MesLock();
 	if (QList.size())
 	{
-		PQNode node = QList.front();
+		node = QList.front();
 		QList.pop();
 		//printf("Qlist Out:%d\n", QList.size());
 	}
